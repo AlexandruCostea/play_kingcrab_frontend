@@ -17,7 +17,10 @@ This is the React-based frontend for **KingCrab**, a Rust-powered chess engine f
 -  Game-over detection (checkmate, stalemate, draw)
 -  API-driven backend communication with persistent engine state
 
----
+<img src="https://github.com/AlexandruCostea/play_kingcrab_frontend/blob/main/assets/MainPage.png" alt="Main Menu" width="600" height="300"/>
+<img src="https://github.com/AlexandruCostea/play_kingcrab_frontend/blob/main/assets/GamePlay.png" alt="Play the Game" width="600" height="300"/>
+<img src="https://github.com/AlexandruCostea/play_kingcrab_frontend/blob/main/assets/EndGame.png" alt="End the Game" width="600" height="300"/>
+
 
 ## Tech Stack
 
