@@ -1,12 +1,56 @@
-# React + Vite
+# ♟️ Play KingCrab Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the React-based frontend for **KingCrab**, a Rust-powered chess engine featuring two AI opponents: a CNN-based engine and a HalfKA neural network-based one. The app allows you to play directly in your browser with a responsive UI built using React, Chakra UI, and `react-chessboard`.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+-  Choose between two engine types:
+   1) **CNN Bot** – a general-purpose convolutional engine
+   2) **HalfKA Bot** – a fast, chess-specialized model
+-  Automatically assigns you the **white side**, so you can experiment openings with your opponents
+-  Legal move recommendations with distinct styling for:
+  - Normal moves (including castling and en-passant)
+  - Captures
+-  Responsive and minimal UI with dark theme
+-  Game-over detection (checkmate, stalemate, draw)
+-  API-driven backend communication with persistent engine state
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- **Frontend:** React + Chakra UI + React Router
+- **Board UI:** [`react-chessboard`](https://github.com/Clariity/react-chessboard)
+- **Chess Logic:** [`chess.js`](https://github.com/jhlywa/chess.js)
+
+---
+
+## 📦 Setup
+
+### 🔧 Prerequisites
+
+- Node.js (v22 or higher)
+- npm
+- A running backend: [play_kingcrab_backend](https://github.com/AlexandruCostea/play_kingcrab_backend)
+
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Setting up the environment
+ - Create a .env file at project root level
+ - Fill in the following entry:
+
+```bash
+VITE_API_URL=<backend url>
+```
+
+### Running the application
+```bash
+npm run dev
+```
